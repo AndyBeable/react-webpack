@@ -17,4 +17,5 @@ const Wrapper = styled.div`
   padding: 2rem;
   position: relative;
   grid-area: trackbar;
+  display: flex;
 `;

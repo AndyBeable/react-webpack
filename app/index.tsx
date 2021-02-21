@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Layout } from './Layout';
 import { Trackbar } from './Trackbar/Trackbar';
+import './styles/style.scss';
 
 function App() {
   return (

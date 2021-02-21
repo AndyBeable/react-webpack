@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FiShuffle } from '../../node_modules/react-icons/fi';
+import { FiShuffle } from 'react-icons/fi';
 import { FiRewind } from 'react-icons/fi';
 import { FiPlayCircle } from 'react-icons/fi';
 import { FiFastForward } from 'react-icons/fi';
@@ -10,7 +10,7 @@ export function TrackPlayer() {
   return (
     <Wrapper>
       <Controls>
-        <FiShuffle />
+        <StyledFiShuffle />
         <FiRewind />
         <FiPlayCircle />
         <FiFastForward />
@@ -23,14 +23,18 @@ export function TrackPlayer() {
 
 const Wrapper = styled.div`
   color: #fafafa;
-  grid-area: trackbar;
+  display: flex;
+  justify-content: center;
 `;
 
 const Controls = styled.div`
   justify-content: space-between;
+  svg + svg {
+    margin-right: 50px;
+  }
 `;
 
-const FiShuffle = styled.i`
+const StyledFiShuffle = styled(FiShuffle)`
   margin-right: 50px;
 `;
 

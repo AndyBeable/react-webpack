@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import styled from "styled-components";
+import React, { ReactNode } from 'react';
+import styled from 'styled-components';
 
 interface WrapperProps {
   children: ReactNode;
@@ -15,6 +15,6 @@ const Wrapper = styled.div<{ active: boolean }>`
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas:
-    "library tracklist friends"
-    "trackbar trackbar trackbar";
+    'library tracklist friends'
+    'trackbar trackbar trackbar';
 `;
