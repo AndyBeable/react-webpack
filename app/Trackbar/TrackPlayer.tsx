@@ -12,7 +12,7 @@ export function TrackPlayer() {
       <Controls>
         <StyledFiShuffle />
         <FiRewind />
-        <FiPlayCircle />
+        <StyledFiPlayCircle />
         <FiFastForward />
         <FiRepeat />
       </Controls>
@@ -25,10 +25,13 @@ const Wrapper = styled.div`
   color: #fafafa;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
 `;
 
 const Controls = styled.div`
-  justify-content: space-between;
+  justify-content: center;
+
   svg + svg {
     margin-right: 50px;
   }
@@ -36,6 +39,10 @@ const Controls = styled.div`
 
 const StyledFiShuffle = styled(FiShuffle)`
   margin-right: 50px;
+`;
+
+const StyledFiPlayCircle = styled(FiPlayCircle)`
+  font-size: 40px;
 `;
 
 const ProgressBar = styled.div``;

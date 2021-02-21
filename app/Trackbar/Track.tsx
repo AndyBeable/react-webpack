@@ -19,6 +19,7 @@ export function Track() {
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  flex: 1 0 auto;
 `;
 
 const AlbumCover = styled.img`
@@ -35,7 +36,7 @@ const TrackInfo = styled.div`
 const TrackName = styled.p`
   color: #fafafa;
   font-size: 16px;
-  margin-bottom: -5px;
+  margin-bottom: 5px;
 `;
 
 const Artist = styled.p`

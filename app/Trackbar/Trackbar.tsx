@@ -2,12 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Track } from './Track';
 import { TrackPlayer } from './TrackPlayer';
+import { Controls } from './Controls';
 
 export function Trackbar() {
   return (
     <Wrapper>
       <Track />
       <TrackPlayer />
+      <Controls />
     </Wrapper>
   );
 }
