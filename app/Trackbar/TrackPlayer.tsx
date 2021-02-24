@@ -16,7 +16,7 @@ export function TrackPlayer() {
         <FiFastForward />
         <FiRepeat />
       </Controls>
-      <ProgressBar></ProgressBar>
+      <Bar type='range' min='0' max='' value='' />
     </Wrapper>
   );
 }
@@ -26,11 +26,13 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex: 1 0 auto;
 `;
 
 const Controls = styled.div`
   justify-content: center;
+  margin-bottom: 20px;
 
   svg + svg {
     margin-right: 50px;
@@ -45,4 +47,10 @@ const StyledFiPlayCircle = styled(FiPlayCircle)`
   font-size: 40px;
 `;
 
-const ProgressBar = styled.div``;
+const ProgressBar = styled.input`
+  width: 100%;
+`;
+
+const Bar = styled.input`
+  width: 30rem;
+`;
